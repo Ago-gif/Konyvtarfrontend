@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <%= title %>
+        Könyvek
     </title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1><%= title %></h1>
-    Hello EJS!
+<h1><%= books[0].title%></h1>
+<ul>
+    <% books.forEach((item)=>{ %>
+        <li><%= item.title %></li>
+    <% }); %>
+</ul>
+
 </body>
 </html>
